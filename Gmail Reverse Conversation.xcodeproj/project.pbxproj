@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,18 @@
 		27363391256CFE2300368F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2736338F256CFE2300368F51 /* Main.storyboard */; };
 		2736339D256CFE2300368F51 /* Gmail_Reverse_ConversationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736339C256CFE2300368F51 /* Gmail_Reverse_ConversationTests.swift */; };
 		273633A8256CFE2300368F51 /* Gmail_Reverse_ConversationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273633A7256CFE2300368F51 /* Gmail_Reverse_ConversationUITests.swift */; };
+		27363401256D058E00368F51 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273633BE256CFE8C00368F51 /* Cocoa.framework */; };
+		27363404256D058E00368F51 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27363403256D058E00368F51 /* SafariWebExtensionHandler.swift */; };
+		27363407256D058E00368F51 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 27363406256D058E00368F51 /* _locales */; };
+		27363409256D058E00368F51 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 27363408256D058E00368F51 /* images */; };
+		2736340B256D058E00368F51 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 2736340A256D058E00368F51 /* manifest.json */; };
+		2736340D256D058E00368F51 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 2736340C256D058E00368F51 /* background.js */; };
+		2736340F256D058E00368F51 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 2736340E256D058E00368F51 /* content.js */; };
+		27363411256D058E00368F51 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 27363410256D058E00368F51 /* popup.html */; };
+		27363413256D058E00368F51 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 27363412256D058E00368F51 /* popup.css */; };
+		27363415256D058E00368F51 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 27363414256D058E00368F51 /* popup.js */; };
+		2736341A256D058E00368F51 /* SafariExtensionMarkOne.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27363400256D058E00368F51 /* SafariExtensionMarkOne.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27363424256D07B700368F51 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 27363423256D07B700368F51 /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +43,28 @@
 			remoteGlobalIDString = 27363382256CFE2200368F51;
 			remoteInfo = "Gmail Reverse Conversation";
 		};
+		27363418256D058E00368F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2736337B256CFE2200368F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273633FF256D058E00368F51;
+			remoteInfo = SafariExtensionMarkOne;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		273633DC256CFE8C00368F51 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2736341A256D058E00368F51 /* SafariExtensionMarkOne.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27363383256CFE2200368F51 /* Gmail Reverse Conversation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gmail Reverse Conversation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +81,20 @@
 		273633A3256CFE2300368F51 /* Gmail Reverse ConversationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gmail Reverse ConversationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		273633A7256CFE2300368F51 /* Gmail_Reverse_ConversationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gmail_Reverse_ConversationUITests.swift; sourceTree = "<group>"; };
 		273633A9256CFE2300368F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273633BE256CFE8C00368F51 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27363400256D058E00368F51 /* SafariExtensionMarkOne.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariExtensionMarkOne.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		27363403256D058E00368F51 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		27363406256D058E00368F51 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		27363408256D058E00368F51 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		2736340A256D058E00368F51 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		2736340C256D058E00368F51 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		2736340E256D058E00368F51 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		27363410256D058E00368F51 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		27363412256D058E00368F51 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		27363414256D058E00368F51 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		27363416256D058E00368F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27363417256D058E00368F51 /* SafariExtensionMarkOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariExtensionMarkOne.entitlements; sourceTree = "<group>"; };
+		27363423256D07B700368F51 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +119,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		273633FD256D058E00368F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27363401256D058E00368F51 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +136,8 @@
 				27363385256CFE2200368F51 /* Gmail Reverse Conversation */,
 				2736339B256CFE2300368F51 /* Gmail Reverse ConversationTests */,
 				273633A6256CFE2300368F51 /* Gmail Reverse ConversationUITests */,
+				27363402256D058E00368F51 /* SafariExtensionMarkOne */,
+				273633BD256CFE8C00368F51 /* Frameworks */,
 				27363384256CFE2200368F51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +148,7 @@
 				27363383256CFE2200368F51 /* Gmail Reverse Conversation.app */,
 				27363398256CFE2300368F51 /* Gmail Reverse ConversationTests.xctest */,
 				273633A3256CFE2300368F51 /* Gmail Reverse ConversationUITests.xctest */,
+				27363400256D058E00368F51 /* SafariExtensionMarkOne.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +193,41 @@
 			path = "Gmail Reverse ConversationUITests";
 			sourceTree = "<group>";
 		};
+		273633BD256CFE8C00368F51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				273633BE256CFE8C00368F51 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27363402256D058E00368F51 /* SafariExtensionMarkOne */ = {
+			isa = PBXGroup;
+			children = (
+				27363403256D058E00368F51 /* SafariWebExtensionHandler.swift */,
+				27363416256D058E00368F51 /* Info.plist */,
+				27363417256D058E00368F51 /* SafariExtensionMarkOne.entitlements */,
+				27363405256D058E00368F51 /* Resources */,
+			);
+			path = SafariExtensionMarkOne;
+			sourceTree = "<group>";
+		};
+		27363405256D058E00368F51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27363423256D07B700368F51 /* style.css */,
+				27363406256D058E00368F51 /* _locales */,
+				27363408256D058E00368F51 /* images */,
+				2736340A256D058E00368F51 /* manifest.json */,
+				2736340C256D058E00368F51 /* background.js */,
+				2736340E256D058E00368F51 /* content.js */,
+				27363410256D058E00368F51 /* popup.html */,
+				27363412256D058E00368F51 /* popup.css */,
+				27363414256D058E00368F51 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,10 +238,12 @@
 				2736337F256CFE2200368F51 /* Sources */,
 				27363380256CFE2200368F51 /* Frameworks */,
 				27363381256CFE2200368F51 /* Resources */,
+				273633DC256CFE8C00368F51 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27363419256D058E00368F51 /* PBXTargetDependency */,
 			);
 			name = "Gmail Reverse Conversation";
 			productName = "Gmail Reverse Conversation";
@@ -191,6 +286,23 @@
 			productReference = 273633A3256CFE2300368F51 /* Gmail Reverse ConversationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		273633FF256D058E00368F51 /* SafariExtensionMarkOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2736341D256D058E00368F51 /* Build configuration list for PBXNativeTarget "SafariExtensionMarkOne" */;
+			buildPhases = (
+				273633FC256D058E00368F51 /* Sources */,
+				273633FD256D058E00368F51 /* Frameworks */,
+				273633FE256D058E00368F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariExtensionMarkOne;
+			productName = SafariExtensionMarkOne;
+			productReference = 27363400256D058E00368F51 /* SafariExtensionMarkOne.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,10 +323,13 @@
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 27363382256CFE2200368F51;
 					};
+					273633FF256D058E00368F51 = {
+						CreatedOnToolsVersion = 12.1;
+					};
 				};
 			};
 			buildConfigurationList = 2736337E256CFE2200368F51 /* Build configuration list for PBXProject "Gmail Reverse Conversation" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,6 +344,7 @@
 				27363382256CFE2200368F51 /* Gmail Reverse Conversation */,
 				27363397256CFE2300368F51 /* Gmail Reverse ConversationTests */,
 				273633A2256CFE2300368F51 /* Gmail Reverse ConversationUITests */,
+				273633FF256D058E00368F51 /* SafariExtensionMarkOne */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +371,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273633FE256D058E00368F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2736340D256D058E00368F51 /* background.js in Resources */,
+				27363424256D07B700368F51 /* style.css in Resources */,
+				27363413256D058E00368F51 /* popup.css in Resources */,
+				27363411256D058E00368F51 /* popup.html in Resources */,
+				27363409256D058E00368F51 /* images in Resources */,
+				2736340B256D058E00368F51 /* manifest.json in Resources */,
+				27363407256D058E00368F51 /* _locales in Resources */,
+				2736340F256D058E00368F51 /* content.js in Resources */,
+				27363415256D058E00368F51 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +418,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		273633FC256D058E00368F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27363404256D058E00368F51 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +438,11 @@
 			isa = PBXTargetDependency;
 			target = 27363382256CFE2200368F51 /* Gmail Reverse Conversation */;
 			targetProxy = 273633A4256CFE2300368F51 /* PBXContainerItemProxy */;
+		};
+		27363419256D058E00368F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273633FF256D058E00368F51 /* SafariExtensionMarkOne */;
+			targetProxy = 27363418256D058E00368F51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +576,7 @@
 		273633AD256CFE2300368F51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Gmail Reverse Conversation/Gmail_Reverse_Conversation.entitlements";
@@ -453,6 +599,7 @@
 		273633AE256CFE2300368F51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Gmail Reverse Conversation/Gmail_Reverse_Conversation.entitlements";
@@ -552,6 +699,44 @@
 			};
 			name = Release;
 		};
+		2736341B256D058E00368F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariExtensionMarkOne/SafariExtensionMarkOne.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SafariExtensionMarkOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "sjswerdloff.Gmail-Reverse-Conversation.SafariExtensionMarkOne";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2736341C256D058E00368F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariExtensionMarkOne/SafariExtensionMarkOne.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SafariExtensionMarkOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "sjswerdloff.Gmail-Reverse-Conversation.SafariExtensionMarkOne";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -587,6 +772,15 @@
 			buildConfigurations = (
 				273633B3256CFE2300368F51 /* Debug */,
 				273633B4256CFE2300368F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2736341D256D058E00368F51 /* Build configuration list for PBXNativeTarget "SafariExtensionMarkOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2736341B256D058E00368F51 /* Debug */,
+				2736341C256D058E00368F51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
